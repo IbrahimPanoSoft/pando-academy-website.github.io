@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a7c44e3117.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Pando Academy</title>
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <header class="" id="header" data-aos="fade-down">
 
-    <header>
         <a href="#Home"><span class="logo">Pando <span class="sub--logo">Academy</span></span></a>
         <nav>
             <ul class="nav--list">
@@ -27,7 +33,7 @@
 
     <!-- Home -->
     <section class="home" id="Home">
-        <div class="center--continer">
+        <div class="center--continer" data-aos="fade-down-right">
             <img src="imgs/home.svg" alt="My Happy SVG" />
 
             <div class="text--box">
@@ -38,29 +44,123 @@
     </section>
 
     <section id="About" class="about">
-        <div class="text--box">
+        <div class="text--box" data-aos="fade-right">
             <h1>Welcome to your future </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus exercitationem illo possimus fugiat adipisci quos deserunt! Inventore dignissimos repudiandae perferendis.</p>
         </div>
-        <img src="imgs/aboutUs.svg" alt="My Happy SVG" />
+        <img src="imgs/aboutUs.svg" alt="My Happy SVG" data-aos="flip-left" />
 
     </section>
 
-    <section id="Courses" class="courses" ">
-        <div class="card "style="width: 400px; ">
-            <div class="card--header ">
-                <h2>Front-End</h2>
+    <section id="Courses" class="courses">
+        <h1 data-aos="zoom-in-down">Our Courses Planse</h1>
+        <div class="card--row">
+            <div class="card " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <!-- style="width: 400px; " -->
+                <div class="card--header ">
+                    <h2>Front-End</h2>
+                </div>
+                <ul class="card--list ">
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Java Script</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>React.js</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Angular</p>
+                    </li>
+                </ul>
             </div>
-        <ul class="card--list ">
-            <li class="card--item "><i class="fa-solid fa-check "></i>HTML</li>
-            <li class="card--item "><i class="fa-solid fa-check "></i>CSS</li>
-            <li class="card--item "><i class="fa-solid fa-check "></i>Java Script</li>
-            <li class="card--item "><i class="fa-solid fa-check "></i>React.js</li>
-            <li class="card--item "><i class="fa-solid fa-check "></i>Angular</li>
-        </ul>
+            <div class="card " data-aos="fade-up" data-aos-duration="500">
+                <!-- style="width: 400px; " -->
+                <div class="card--header ">
+                    <h2>Front-End</h2>
+                </div>
+                <ul class="card--list ">
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Java Script</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>React.js</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Angular</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card " data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
+                <!-- style="width: 400px; " -->
+                <div class="card--header ">
+                    <h2>Front-End</h2>
+                </div>
+                <ul class="card--list ">
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>HTML</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>CSS</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Java Script</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>React.js</p>
+                    </li>
+                    <li class="card--item "><i class="fa-solid fa-check "></i>
+                        <p>Angular</p>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
+    <section class="applay" id="Applay">
+        <Form data-aos="flip-down" id="form">
+            <legend>Applay now </legend>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="phoneNumer">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+            <label for="courses">Choose a Courses:</label>
+            <select name="courses" id="courses">
+                    <option value="Front-End">Fronst-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Full-stack">Full Stack</option>
+                  </select>
+            <button class="aplly--now" id="apllay">Apllay</button>
+
+
+        </Form>
+
+    </section>
+
+    <section class="contact-us" id="Contact">
+        <footer>
+            <div class="contact-card" data-aos="zoom-out-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta consequuntur, placeat sint minus atque!</p>
+            </div>
+            <div class="contact_section-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, fuga?</div>
+            <div class="contact_section-2">We are always looking for new talents, contact us on careers@pando-soft.com .</div>
+        </footer>
+    </section>
 </body>
+
+<script src="script.js"></script>
 
 </html>
